@@ -9,7 +9,7 @@ Dead simple Elixir wrapper for version 2 of the
 ```elixir
 def deps do
   [
-    {:digitalocean, git: "https://github.com/thehunmonkgroup/elixir-digitalocean.git"},
+    {:digitalocean, git: "https://github.com/stirlab/elixir-digitalocean.git"},
   ]
 end
 ```
