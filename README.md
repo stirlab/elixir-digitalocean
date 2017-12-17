@@ -55,7 +55,7 @@ configuration = %{
   backups: false,
   monitoring: false,
   tags: [
-    "video",
+    "some-server-tag",
   ],
 }
 response = DigitalOcean.post("/droplets", configuration)
