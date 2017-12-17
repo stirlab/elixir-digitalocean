@@ -26,7 +26,7 @@ The library leverages the [Tesla](https://github.com/teamon/tesla) HTTP
 library, and for now it simply wraps the Tesla GET/POST/etc methods
 directly.
 
-The path and request parameters can be figured out via DigitalOcean's
+The path and JSON data parameters can be figured out via DigitalOcean's
 [API](https://developers.digitalocean.com/documentation/v2).
 
 ### Examples
