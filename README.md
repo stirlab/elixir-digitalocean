@@ -23,7 +23,7 @@ Edit to taste.
 ## Usage
 
 The library leverages the [Tesla](https://github.com/teamon/tesla) HTTP
-library, and for now it simply wraps the Tesla get/post/etc methods
+library, and for now it simply wraps the Tesla GET/POST/etc methods
 directly.
 
 The path and request parameters can be figured out via DigitalOcean's
