@@ -15,4 +15,19 @@ defmodule DigitalOcean do
     plug Tesla.Middleware.DebugLogger
   end
 
+  defdelegate head(path), to: __MODULE__, as: :head
+  defdelegate head(path, opts), to: __MODULE__, as: :head
+
+  defdelegate get(path), to: __MODULE__, as: :get
+  defdelegate get(path, opts), to: __MODULE__, as: :get
+
+  defdelegate post(path), to: __MODULE__, as: :post
+  defdelegate post(path, opts), to: __MODULE__, as: :post
+
+  defdelegate put(path), to: __MODULE__, as: :put
+  defdelegate put(path, opts), to: __MODULE__, as: :put
+
+  defdelegate delete(path), to: __MODULE__, as: :delete
+  defdelegate delete(path, opts), to: __MODULE__, as: :delete
+
 end
