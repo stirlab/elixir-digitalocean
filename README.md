@@ -1,14 +1,7 @@
-# DigitalOcean wrapper
+# Overview
 
-Dead simple Elixir wrapper for the [DigitalOcean](https://www.digitalocean.com)
-API.
-
-This uses version 2 of their
-[API](https://developers.digitalocean.com/documentation/v2) by default.
-
-**NOTE:** Almost nothing in here right now, only very basic functions have been
-implemented for their DNS Manager functionality. Pull requests welcome to add
-other stuff :)
+Dead simple Elixir wrapper for version 2 of the
+[DigitalOcean API](https://developers.digitalocean.com/documentation/v2).
 
 ## Installation (for now)
 
