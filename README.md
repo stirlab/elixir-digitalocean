@@ -1,6 +1,6 @@
 # Overview
 
-Dead simple Elixir wrapper for version 2 of the
+Dead simple Elixir wrapper for the
 [DigitalOcean API](https://developers.digitalocean.com/documentation/v2).
 
 ## Installation (for now)
