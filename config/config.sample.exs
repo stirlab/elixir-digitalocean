@@ -30,5 +30,7 @@ use Mix.Config
 #     import_config "#{Mix.env}.exs"
 
 config :digitalocean, debug_http: false
+# Uncomment for deeper level HTTP debugging.
+#config :digitalocean, api_endpoint: "https://requestb.in"
 # Generate this token at https://cloud.digitalocean.com/settings/api/tokens
 config :digitalocean, access_token: ""
