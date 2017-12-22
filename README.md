@@ -44,6 +44,12 @@ Enum.each response.body["images"], fn image ->
   IO.inspect image
 end
 
+# This is a handy trick for bypassing DO's requirement to reset the root
+# password on first login. Edit 'someotherpassword' to the root password you'd
+# like, pass user_data in the configuration, and ignore the DO root password
+# email :)
+user_data = "#cloud-config\n\nruncmd:\n  - echo root:someotherpassword | chpasswd"
+
 # Create droplet.
 configuration = %{
   image: 30035107,
@@ -57,6 +63,7 @@ configuration = %{
   tags: [
     "some-server-tag",
   ],
+  user_data: user_data,
 }
 response = DigitalOcean.post("/droplets", configuration)
 
