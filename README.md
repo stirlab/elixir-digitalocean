@@ -33,13 +33,13 @@ The path and JSON data parameters can be figured out via DigitalOcean's
 
 ```elixir
 # Get account info.
-response = DigitalOcean.get "/account"
+{:ok, response} = DigitalOcean.get "/account"
 IO.puts response.status
 IO.inspect response.headers
 IO.inspect response.body
 
 # Get images.
-response = DigitalOcean.get("/images", query: [per_page: 200])
+{:ok, response} = DigitalOcean.get("/images", query: [per_page: 200])
 Enum.each response.body["images"], fn image ->
   IO.inspect image
 end
@@ -65,14 +65,14 @@ configuration = %{
   ],
   user_data: user_data,
 }
-response = DigitalOcean.post("/droplets", configuration)
+{:ok, response} = DigitalOcean.post("/droplets", configuration)
 
 # Rename droplet.
 id = 75372859
-response = DigitalOcean.post("/droplets/#{id}/actions", %{:type => "rename", :name => "updated-debian-stretch"})
+{:ok, response} = DigitalOcean.post("/droplets/#{id}/actions", %{:type => "rename", :name => "updated-debian-stretch"})
 
 # Delete droplet.
 id = 75372859
-response = DigitalOcean.delete("/droplets/#{id}")
+{:ok, response} = DigitalOcean.delete("/droplets/#{id}")
 
 ```

@@ -8,6 +8,7 @@ defmodule DigitalOcean do
 
   use Tesla, only: [:head, :get, :post, :put, :delete]
 
+  plug Tesla.Middleware.Tuples, rescue_errors: :all
   plug Tesla.Middleware.BaseUrl, Application.get_env(:digitalocean, :api_endpoint, @api_endpoint_default)
   plug Tesla.Middleware.Headers, %{"Authorization" => "Bearer " <> Application.get_env(:digitalocean, :access_token)}
   plug Tesla.Middleware.JSON
