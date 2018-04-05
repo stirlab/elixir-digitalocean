@@ -32,5 +32,12 @@ use Mix.Config
 config :digitalocean, debug_http: false
 # Uncomment for deeper level HTTP debugging.
 #config :digitalocean, api_endpoint: "https://requestb.in"
+
+# Redirect/retry options.
+#config :digitalocean, http_follow_redirects: true
+#config :digitalocean, http_retry_enabled: true
+#config :digitalocean, http_retry_delay: 1000
+#config :digitalocean, http_retry_max_retries: 5
+
 # Generate this token at https://cloud.digitalocean.com/settings/api/tokens
 config :digitalocean, access_token: ""
