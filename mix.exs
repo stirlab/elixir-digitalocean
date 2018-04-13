@@ -50,6 +50,7 @@ defmodule DigitalOcean.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev},
       {:tesla, "~> 0.10.0"},
       {:poison, "~> 3.1.0"},
       {:apex, "~>1.2.0"},
