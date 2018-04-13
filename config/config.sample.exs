@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :digitalocean, key: :value
+#     config :digitalocean_api_wrapper, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:digitalocean, :key)
+#     Application.get_env(:digitalocean_api_wrapper, :key)
 #
 # You can also configure a 3rd-party app:
 #
@@ -29,15 +29,15 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 
-config :digitalocean, debug_http: false
+config :digitalocean_api_wrapper, debug_http: false
 # Uncomment for deeper level HTTP debugging.
-#config :digitalocean, api_endpoint: "https://requestb.in"
+#config :digitalocean_api_wrapper, api_endpoint: "https://requestb.in"
 
 # Redirect/retry options.
-#config :digitalocean, http_follow_redirects: true
-#config :digitalocean, http_retry_enabled: true
-#config :digitalocean, http_retry_delay: 1000
-#config :digitalocean, http_retry_max_retries: 5
+#config :digitalocean_api_wrapper, http_follow_redirects: true
+#config :digitalocean_api_wrapper, http_retry_enabled: true
+#config :digitalocean_api_wrapper, http_retry_delay: 1000
+#config :digitalocean_api_wrapper, http_retry_max_retries: 5
 
 # Generate this token at https://cloud.digitalocean.com/settings/api/tokens
-config :digitalocean, access_token: ""
+config :digitalocean_api_wrapper, access_token: ""
