@@ -3,20 +3,24 @@
 Dead simple [Elixir](http://elixir-lang.github.io) wrapper for the
 [DigitalOcean API](https://developers.digitalocean.com/documentation/v2).
 
-## Installation (for now)
+## Installation
 
+First, add DigitalOcean to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
-  [
-    {:digitalocean, git: "https://github.com/stirlab/elixir-digitalocean.git"},
-  ]
+  [{:digitalocean, "~> 0.1"}]
 end
 ```
+Then, update your dependencies:
 
 ```sh
-cp config/config.sample.exs config/config.exs
+$ mix deps.get
 ```
+
+## Configuration
+
+See the [sample configuration](config/config.sample.exs)
 
 Edit to taste.
 
