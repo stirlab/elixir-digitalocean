@@ -9,7 +9,7 @@ First, add DigitalOcean to your `mix.exs` dependencies:
 
 ```elixir
 def deps do
-  [{:digitalocean, "~> 0.1"}]
+  [{:digitalocean_api_wrapper, "~> 0.1"}]
 end
 ```
 Then, update your dependencies:
