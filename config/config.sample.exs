@@ -29,7 +29,9 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 
-config :digitalocean_api_wrapper, debug_http: false
+# See https://hexdocs.pm/tesla/Tesla.Middleware.Logger.html
+config :digitalocean_api_wrapper, enable_tesla_log: false
+
 # Uncomment for deeper level HTTP debugging.
 #config :digitalocean_api_wrapper, api_endpoint: "https://requestb.in"
 

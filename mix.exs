@@ -4,7 +4,7 @@ defmodule DigitalOcean.Mixfile do
   def project do
     [
       app: :digitalocean_api_wrapper,
-      version: "0.1.1",
+      version: "0.2.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env == :prod,
       package: package(),
@@ -51,9 +51,9 @@ defmodule DigitalOcean.Mixfile do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:tesla, "~> 0.10.0"},
-      {:poison, "~> 3.1.0"},
-      {:apex, "~>1.2.0"},
+      {:tesla, "~> 1.1.0"},
+      {:jason, "~> 1.1.0"},
+      {:apex, "~> 1.2.0"},
     ]
   end
 end
