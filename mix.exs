@@ -51,7 +51,7 @@ defmodule DigitalOcean.Mixfile do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:tesla, "~> 1.1.0"},
+      {:tesla, "~> 1.2.0"},
       {:jason, "~> 1.1.0"},
       {:apex, "~> 1.2.0"},
     ]
