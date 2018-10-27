@@ -4,8 +4,8 @@ defmodule DigitalOcean.Mixfile do
   def project do
     [
       app: :digitalocean_api_wrapper,
-      version: "0.2.0",
-      elixir: "~> 1.6",
+      version: "0.2.1",
+      elixir: "~> 1.7",
       start_permanent: Mix.env == :prod,
       package: package(),
       description: description(),
